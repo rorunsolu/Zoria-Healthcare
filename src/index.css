@@ -52,6 +52,36 @@ article {
   padding: var(--padding-card);
 }
 
+a {
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+button {
+    cursor: pointer;
+
+    background: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+    width: 100%;
+
+    border-radius: var(--border-radius);
+}
+
 .logo {
   display: flex;
   align-items: center;
