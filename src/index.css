@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-2: hsl(0, 0%, 80%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-2: hsl(0, 0%, 25%);
+
+  --color-green: hsl(155, 100%, 25%);
+  --color-yellow: hsl(54, 100%, 56%);
+  --color-purple: hsl(270, 50%, 36%);
+  --color-orange: hsl(24, 100%, 50%);
+
+  --color-green-hover: hsl(155, 100%, 15%);
+  --color-white-hover: hsl(0, 0%, 90%);
+
+  --border-radius: 0.35rem;
+  --padding-card: 1.25rem;
+
+  --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
+
+  --transition: 0.2s ease-in-out;
+
+  @media (max-width: 350px) {
+    --padding-card: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem 0 0 0;
+
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+section {
+  padding: 10rem 0;
+
+  @media (max-width: 600px) {
+    padding: 5rem 0;
+  }
+}
+
+article {
+  border-radius: var(--border-radius);
+  padding: var(--padding-card);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: var(--color-white);
+
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
