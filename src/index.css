@@ -16,7 +16,7 @@
   --color-green-hover: hsl(155, 100%, 15%);
   --color-white-hover: hsl(0, 0%, 90%);
 
-  --border-radius: 0.35rem;
+  --border-radius: 0.4rem;
   --padding-card: 1.25rem;
 
   --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
@@ -45,11 +45,6 @@ section {
   @media (max-width: 600px) {
     padding: 5rem 0;
   }
-}
-
-article {
-  border-radius: var(--border-radius);
-  padding: var(--padding-card);
 }
 
 a {
