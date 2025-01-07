@@ -3,7 +3,7 @@ const Navbar = () => {
     <nav className="fixed z-[100] w-full">
       <div className="nav flex items-center justify-between p-[1rem] bg-green">
         <a className="logo flex items-center gap-[0.35rem] body-1" href="#">
-          <img src="./src/images/logo.png" alt="" />
+          <img src="./src/assets/logo/logo.png" alt="" />
           Zoria
         </a>
 
