@@ -51,7 +51,7 @@ export const articleCards = [
     {
         title: "Healthy Sleep Habits",
         description: "Discover how regular sleep can improve your overall health.",
-        url: "./public/articles/articles-image-4.jpg",
+        url: "/articles/articles-image-4.jpg",
         alt: "A women in bed",
     }
 ];
