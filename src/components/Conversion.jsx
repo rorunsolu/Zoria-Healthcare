@@ -4,7 +4,7 @@ const Conversion = () => {
         <section id="conversion" className="relative">
             <img
                 className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
-                src="./public/conversion/conversion-image-1.jpg"
+                src="conversion/conversion-image-1.jpg"
                 alt="A person takign thir blood sugar levels"
             />
             <div className="container conversion">
