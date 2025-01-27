@@ -33,25 +33,25 @@ export const articleCards = [
     {
         title: "The Benefits of Regular Health Checks",
         description: "Regular health checks can help identify potential health issues early.",
-        url: "/src/assets/articles/articles-image-1.jpg",
-        alt: "People p[utting their hands together in a circle",
+        url: "./src/assets/articles/articles-image-1.jpg",
+        alt: "People putting their hands together in a circle",
     },
     {
         title: "Healthy Eating Habits",
         description: "Discover how balanced meals can improve your overall health.",
-        url: "/src/assets/articles/articles-image-2.jpg",
+        url: "./src/assets/articles/articles-image-2.jpg",
         alt: "A man and a woman cheering",
     },
     {
         title: "Exercise Tips for a Busy Schedule",
         description: "Learn quick and effective workouts for a hectic lifestyle.",
-        url: "/src/assets/articles/articles-image-3.jpg",
+        url: "./src/assets/articles/articles-image-3.jpg",
         alt: "A doctor gving a patient medicine",
     },
     {
         title: "Healthy Sleep Habits",
         description: "Discover how regular sleep can improve your overall health.",
-        url: "/src/assets/articles/articles-image-4.jpg",
+        url: "./src/assets/articles/articles-image-4.jpg",
         alt: "A women in bed",
     }
 ];

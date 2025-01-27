@@ -20,9 +20,9 @@ const Articles = () => {
                             className="articles__card flex flex-col justify-between p-5 relative overflow-hidden rounded-lg"
                         >
                             <img
+                                className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
                                 src={card.url}
                                 alt={card.alt}
-                                className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
                             />
 
                             <h3 className="articles__card-title text-xl font-bold text-white mb-2">
