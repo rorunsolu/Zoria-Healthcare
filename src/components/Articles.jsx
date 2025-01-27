@@ -1,7 +1,6 @@
 import { articleCards } from "../constants/index.js";
 
 const Articles = () => {
-
     return (
         <section id="articles">
             <div className="container articles">
@@ -15,20 +14,32 @@ const Articles = () => {
                 </div>
 
                 <div className="articles__card-wrapper grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-
                     {articleCards.map((card, index) => (
-                        <article key={index} className="articles__card flex flex-col justify-between p-5 relative overflow-hidden  rounded-lg">
-                            <div className="absolute inset-0 -z-10 w-full h-full bg-cover bg-center brightness-50" style={{ backgroundImage: `url(${card.image})` }}></div>
-                            <h3 className="articles__card-title text-xl font-bold text-white mb-2">{card.title}</h3>
+                        <article
+                            key={index}
+                            className="articles__card flex flex-col justify-between p-5 relative overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src={card.url}
+                                alt={card.alt}
+                                className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
+                            />
+
+                            <h3 className="articles__card-title text-xl font-bold text-white mb-2">
+                                {card.title}
+                            </h3>
                             <div className="articles__card-bottom mt-4">
-                                <p className="articles__card-info text-[1rem] text-white-2 mb-4">{card.description}</p>
+                                <p className="articles__card-info text-[1rem] text-white-2 mb-4">
+                                    {card.description}
+                                </p>
                                 <div className="button-wrapper">
-                                    <a className="button button--white" href="#">Read More</a>
+                                    <a className="button button--white" href="#">
+                                        Read More
+                                    </a>
                                 </div>
                             </div>
                         </article>
                     ))}
-
                 </div>
             </div>
         </section>
