@@ -16,7 +16,7 @@ const Benefits = () => {
                     <article className="benefits__card relative flex flex-col justify-between items-start col-span-5 row-span-6 overflow-hidden rounded-lg shadow-lg p-6" id="card-image">
                         <img
                             className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
-                            src="./public/benefits/benefits-image.jpg"
+                            src="/benefits/benefits-image.jpg"
                             alt="A person takign their blood sugar levels"
                         />
                         <div>
