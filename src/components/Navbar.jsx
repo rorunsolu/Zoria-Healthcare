@@ -15,7 +15,7 @@ const Navbar = () => {
             {navbarLinks.map((link, index) => (
               <li key={index} className="nav__item">
                 <a
-                  className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
+                  className="nav__link relative font-semibold pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white hover:text-yellow"
                   href={link.href}
                 >
                   {link.label}

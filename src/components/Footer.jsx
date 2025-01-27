@@ -1,4 +1,4 @@
-import { groupedLinks, socialLinks } from "../constants/index.js";
+import { companyLogo, groupedLinks, socialLinks } from "../constants/index.js";
 
 const Footer = () => {
 
@@ -7,8 +7,9 @@ const Footer = () => {
             <div className="footer grid grid-cols-1 lg:grid-cols-6 gap-[1.5rem]">
 
                 <div className="footer__company col-span-2">
-                    <a className="logo flex items-center gap-2 text-white font-bold" href="">
-                        <img src="./src/assets/logo/logo.png" alt="Logo" className="h-10" /> Zoria
+                    <a className="logo flex items-center gap-[0.35rem] body-1" href="#">
+                        <img src={companyLogo.src} alt={companyLogo.alt} />
+                        {companyLogo.text}
                     </a>
                     <p className="footer__company-subtitle my-4 text-white">Committed to providing exceptional healthcare services to support your well-being every step of the way.</p>
                     <div className="footer__socials flex gap-[1rem]">

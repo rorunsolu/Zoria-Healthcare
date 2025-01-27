@@ -1,24 +1,7 @@
+
+import { testimonialCards } from "../constants/index.js";
+
 const Testimonials = () => {
-    const testimonialCards = [
-        {
-            image: "person-1.jpg",
-            name: "John Doe",
-            job: "Project Manager",
-            review: "The team was professional, responsive, and truly understood my needs. I highly recommend them to everyone!",
-        },
-        {
-            image: "person-2.jpg",
-            name: "Jane Smith",
-            job: "Marketing Specialist",
-            review: "Their attention to detail and commitment to delivering top-notch results made the entire process smooth and stress-free.",
-        },
-        {
-            image: "person-3.jpg",
-            name: "Emily Taylor",
-            job: "Business Owner",
-            review: "The team delivered results that exceeded our expectations, and their creative approach brought a fresh perspective.",
-        },
-    ];
 
     return (
         <section id="testimonials">
@@ -42,7 +25,7 @@ const Testimonials = () => {
                                 <div className="testimonials__card-image-wrapper w-14 h-14 rounded-full overflow-hidden">
                                     <img
                                         className="testimonials__card-image object-cover w-full h-full"
-                                        src={`./src/assets/testimonials/${testimonial.image}`}
+                                        src={testimonial.url}
                                         alt={`Picture of ${testimonial.name}`}
                                         loading="lazy"
                                     />
@@ -54,7 +37,7 @@ const Testimonials = () => {
                             </div>
 
                             <div className="testimonials__card-middle italic text-gray-600 mb-4">
-                                <p className="testimonials__card-review">"{testimonial.review}"</p>
+                                <p className="testimonials__card-review">{testimonial.review}</p>
                             </div>
 
                             <div className="testimonials__card-bottom flex items-center gap-2 text-gray-800">

@@ -1,46 +1,6 @@
+import { pricingCards } from "../constants/index.js";
+
 const Pricing = () => {
-    const pricingCards = [
-        {
-            title: "Basic Package",
-            description: "Healthcare services for individuals.",
-            fee: 16,
-            features: [
-                "General Health Checkups",
-                "24/7 Online Consultation",
-                "Basic Lab Tests"
-            ]
-        },
-        {
-            title: "Pro Package",
-            description: "Healthcare services for families.",
-            fee: 20,
-            features: [
-                "Family Health Checkups",
-                "Specialist Consultations",
-                "Advanced Lab Tests"
-            ]
-        },
-        {
-            title: "Business Package",
-            description: "Comprehensive solutions for businesses.",
-            fee: 24,
-            features: [
-                "Corporate Health Plans",
-                "On-site Health Services",
-                "Employee Wellness Programs"
-            ]
-        },
-        {
-            title: "Premium Package",
-            description: "Healthcare services for VIP clients.",
-            fee: 30,
-            features: [
-                "Personal Health Manager",
-                "Home Visits",
-                "Comprehensive Lab Tests"
-            ]
-        }
-    ];
 
     return (
         <section id="pricing">

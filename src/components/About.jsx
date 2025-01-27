@@ -1,24 +1,6 @@
+import { aboutStats } from "../constants/index.js";
+
 const About = () => {
-    const aboutStats = [
-        {
-            number: "15+",
-            category: "Years of Experience",
-            description: "Our team has over 15 years of experience.",
-            icon: "ri-team-fill",
-        },
-        {
-            number: "60k",
-            category: "Patients Worldwide",
-            description: "We have treated over 60,000 patients worldwide successfully.",
-            icon: "ri-earth-fill",
-        },
-        {
-            number: "800+",
-            category: "Successful Treatments",
-            description: "Our team has performed over 800 successful treatments.",
-            icon: "ri-heart-pulse-fill",
-        }
-    ];
 
     return (
         <section id="about" className="bg-green py-16">

@@ -1,22 +1,6 @@
-const Benefits = () => {
+import { benefitCards } from "../constants/index.js";
 
-    const benefitCards = [
-        {
-            description: "Tailored financial services designed to reduce operational costs and improve your bottom line.",
-            title: "Electronic Health",
-            cardClass: "benefits__card flex flex-col justify-between items-start overflow-hidden rounded-lg bg-purple-500 p-6 shadow-lg",
-        },
-        {
-            description: "Gain valuable insights into your financial performance with detailed.",
-            title: "Telehealth Services",
-            cardClass: "benefits__card flex flex-col justify-between items-start overflow-hidden rounded-lg bg-orange-500 p-6 shadow-lg",
-        },
-        {
-            description: "Our dedicated team provides personalized financial assistance tailored to your company's needs.",
-            title: "Billing and Invoicing",
-            cardClass: "benefits__card flex flex-col justify-between items-start overflow-hidden rounded-lg bg-green-500 p-6 shadow-lg",
-        }
-    ];
+const Benefits = () => {
 
     return (
         <section id="benefits">
@@ -30,7 +14,11 @@ const Benefits = () => {
                 <div className="benefits__card-wrapper grid grid-cols-11 grid-rows-6 gap-8">
 
                     <article className="benefits__card relative flex flex-col justify-between items-start col-span-5 row-span-6 overflow-hidden rounded-lg shadow-lg p-6" id="card-image">
-                        <div className="absolute inset-0 -z-10 w-full h-full bg-cover bg-center brightness-50" style={{ backgroundImage: "url(/src/assets/benefits/benefits-image.jpg)" }}></div>
+                        <img
+                            className="absolute inset-0 -z-10 w-full h-full object-cover brightness-50"
+                            src="./public/benefits/benefits-image.jpg"
+                            alt="A person takign their blood sugar levels"
+                        />
                         <div>
                             <p className="benefits__card-subtitle text-yellow">Ready for the future</p>
                             <h3 className="benefits__card-title text-2xl font-semibold leading-tight text-white">
