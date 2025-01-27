@@ -33,19 +33,19 @@ export const articleCards = [
     {
         title: "The Benefits of Regular Health Checks",
         description: "Regular health checks can help identify potential health issues early.",
-        url: "./public/articles/articles-image-1.jpg",
+        url: "/articles/articles-image-1.jpg",
         alt: "People putting their hands together in a circle",
     },
     {
         title: "Healthy Eating Habits",
         description: "Discover how balanced meals can improve your overall health.",
-        url: "./public/articles/articles-image-2.jpg",
+        url: "/articles/articles-image-2.jpg",
         alt: "A man and a woman cheering",
     },
     {
         title: "Exercise Tips for a Busy Schedule",
         description: "Learn quick and effective workouts for a hectic lifestyle.",
-        url: "./public/articles/articles-image-3.jpg",
+        url: "/articles/articles-image-3.jpg",
         alt: "A doctor gving a patient medicine",
     },
     {
