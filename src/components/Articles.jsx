@@ -35,10 +35,10 @@ const Articles = () => {
                     </p>
                 </div>
 
-                <div className="articles__card-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="articles__card-wrapper grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
 
                     {articleCards.map((card, index) => (
-                        <article key={index} className="articles__card flex flex-col justify-between p-5 relative overflow-hidden h-72 rounded-md">
+                        <article key={index} className="articles__card flex flex-col justify-between p-5 relative overflow-hidden  rounded-lg">
                             <div className="absolute inset-0 -z-10 w-full h-full bg-cover bg-center brightness-50" style={{ backgroundImage: `url(/src/assets/articles/${card.image})` }}></div>
                             <h3 className="articles__card-title text-xl font-bold text-white mb-2">{card.title}</h3>
                             <div className="articles__card-bottom mt-4">

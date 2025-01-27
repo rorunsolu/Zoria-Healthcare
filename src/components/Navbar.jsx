@@ -1,60 +1,37 @@
+import { navbarLinks, companyLogo } from "../constants/index.js";
+
 const Navbar = () => {
   return (
-    <nav className="fixed z-[100] w-full">
-      <div className="nav flex items-center justify-between p-[1rem] bg-green">
-        <a className="logo flex items-center gap-[0.35rem] body-1" href="#">
-          <img src="./src/assets/logo/logo.png" alt="" />
-          Zoria
-        </a>
+    <nav className="fixed z-[100] w-full bg-green">
+      <div className="container nav flex items-center justify-between p-[1rem]">
 
-        <ul className="nav__list flex items-center">
-          <li className="nav__item">
-            <a
-              className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
-              href="#"
-            >
-              Home
-            </a>
-          </li>
-          <li className="nav__item">
-            <a
-              className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
-              href="#about"
-            >
-              About Us
-            </a>
-          </li>
-          <li className="nav__item">
-            <a
-              className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
-              href="#pricing"
-            >
-              Pricing
-            </a>
-          </li>
-          <li className="nav__item">
-            <a
-              className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
-              href="#conversion"
-            >
-              Contact
-            </a>
-          </li>
-          <li className="nav__item">
-            <a
-              className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
-              href="#benefits"
-            >
-              Benefits
-            </a>
-          </li>
-        </ul>
+        <div className="flex gap-8">
+          <a className="logo flex items-center gap-[0.35rem] body-1" href="#">
+            <img src={companyLogo.src} alt={companyLogo.alt} />
+            {companyLogo.text}
+          </a>
+
+          <ul className="nav__list flex items-center">
+            {navbarLinks.map((link, index) => (
+              <li key={index} className="nav__item">
+                <a
+                  className="nav__link relative pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white"
+                  href={link.href}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="nav__button-wrapper flex items-center gap-[0.5rem]">
-          <a className="button button--nav" href="#">
+          <a
+            className="button button--nav border-2 border-white bg-transparent text-white hover:bg-green-hover"
+            href="#"
+          >
             Login
           </a>
-          <span className="text-white">|</span>
           <a className="button button--nav" href="#">
             Get Started
           </a>
@@ -64,22 +41,8 @@ const Navbar = () => {
           className="nav__toggle-open hidden text-white"
           aria-label="open menu"
           type="button"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
+        />
+
       </div>
     </nav>
   );

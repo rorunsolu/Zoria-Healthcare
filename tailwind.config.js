@@ -15,6 +15,7 @@ export default {
         'black-2': 'var(--color-black-2)',
 
         green: 'var(--color-green)',
+        'green-hover': 'var(--color-green-hover)',
         yellow: 'var(--color-yellow)',
         purple: 'var(--color-purple)',
         orange: 'var(--color-orange)',

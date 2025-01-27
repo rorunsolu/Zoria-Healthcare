@@ -33,9 +33,9 @@ const Testimonials = () => {
                     </p>
                 </div>
 
-                <div className="testimonials__card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="testimonials__card-wrapper grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 xl:gap-8 gap-12">
                     {testimonialCards.map((testimonial, index) => (
-                        <article key={index} className="testimonials__card flex flex-col bg-white rounded-md rounded-t-none shadow-md p-5 relative border-t-4 border-[var(--color-green)]">
+                        <article key={index} className="testimonials__card flex flex-col bg-white rounded-lg rounded-t-none shadow-md p-5 relative border-t-4 border-[var(--color-green)]">
                             <i className="ri-speak-fill absolute-icon"></i>
 
                             <div className="testimonials__card-top flex items-center gap-4 mt-[1.5rem] mb-4">

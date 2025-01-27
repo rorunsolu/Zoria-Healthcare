@@ -1,5 +1,6 @@
-const Faq = () => {
+import { useState } from "react";
 
+const Faq = () => {
     const faqItems = [
         {
             question: "Which Healthcare Package Should I Choose?",
@@ -19,6 +20,33 @@ const Faq = () => {
         }
     ];
 
+    const AccordionItem = ({ question, answer }) => {
+        const [isOpen, setIsOpen] = useState(false);
+
+        return (
+            <div className="faq__item rounded-lg bg-white shadow-md">
+                <div
+                    className={`faq__header flex items-center relative rounded-lg p-5 min-h-[3.5rem] cursor-pointer font-medium text-black bg-white ${isOpen ? "active" : ""
+                        }`}
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    {question}
+                    <span className="absolute right-4 text-2xl">{isOpen ? "-" : "+"}</span>
+                </div>
+                <div
+                    className="faq__body overflow-hidden transition-max-height duration-200 ease-out rounded-lg bg-white"
+                    style={{
+                        maxHeight: isOpen ? "1000px" : "0",
+                        transition: "max-height 0.2s ease-out",
+                    }}>
+                    <div className="faq__content text-left p-5 pt-0 font-normal text-gray-700">
+                        {answer}
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
     return (
         <section id="faq" className="bg-green py-16">
             <div className="container faq flex flex-col gap-4">
@@ -26,18 +54,9 @@ const Faq = () => {
                     Frequently Asked <span className="text-yellow-400">Questions</span>
                 </h2>
                 <div className="faq flex flex-col gap-4">
-
                     {faqItems.map((faqItem, index) => (
-                        <div key={index} className="faq__item rounded-lg bg-white shadow-md">
-                            <div className="faq__header flex items-center relative rounded-lg p-5 min-h-[3.5rem] cursor-pointer font-medium text-black bg-white">{faqItem.question}
-                                <span className="absolute right-4 text-2xl">+</span>
-                            </div>
-                            <div className="faq__body max-h-0 overflow-hidden transition-max-height duration-200 ease-out rounded-lg bg-white">
-                                <div className="faq__content text-left p-5 font-normal text-gray-700">{faqItem.answer}</div>
-                            </div>
-                        </div>
+                        <AccordionItem key={index} question={faqItem.question} answer={faqItem.answer} />
                     ))}
-
                 </div>
             </div>
         </section>
