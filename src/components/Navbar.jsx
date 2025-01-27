@@ -4,7 +4,6 @@ const Navbar = () => {
   return (
     <nav className="fixed z-[100] w-full bg-green">
       <div className="container nav flex items-center justify-between pt-[1rem] pb-[1rem]">
-
         <div className="flex gap-8">
           <a className="logo flex items-center gap-[0.35rem] body-1" href="#">
             <img src={companyLogo.src} alt={companyLogo.alt} />
@@ -44,7 +43,6 @@ const Navbar = () => {
         >
           <i className="ri-menu-line"></i>
         </button>
-
       </div>
     </nav>
   );

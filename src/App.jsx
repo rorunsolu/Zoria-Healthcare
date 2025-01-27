@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Faq />
         <Articles />
         <Footer />
+        <Sidebar />
       </div>
     </>
   );
