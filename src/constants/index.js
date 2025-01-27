@@ -31,15 +31,15 @@ export const companyLogo = {
 
 export const benefitCards = [
     {
-        description: "Tailored financial services designed to reduce operational costs and improve your bottom line.",
+        description: "Join us for cost-effective healthcare solutions.",
         title: "Electronic Health",
     },
     {
-        description: "Gain valuable insights into your financial performance with detailed.",
+        description: "Access comprehensive telehealth services easily.",
         title: "Telehealth Services",
     },
     {
-        description: "Our dedicated team provides personalized financial assistance tailored to your company's needs.",
+        description: "Get personalized billing and invoicing support.",
         title: "Billing and Invoicing",
     }
 ];

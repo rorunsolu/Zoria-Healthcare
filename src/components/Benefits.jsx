@@ -11,7 +11,7 @@ const Benefits = () => {
                     </h2>
                 </div>
 
-                <div className="benefits__card-wrapper grid grid-cols-11 grid-rows-6 gap-8">
+                <div className="benefits__card-wrapper flex flex-col  lg:grid lg:grid-cols-11 lg:grid-rows-6 gap-8">
 
                     <article className="benefits__card relative flex flex-col justify-between items-start col-span-5 row-span-6 overflow-hidden rounded-lg shadow-lg p-6" id="card-image">
                         <img
