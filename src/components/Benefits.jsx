@@ -4,11 +4,9 @@ const Benefits = () => {
   return (
     <section id="benefits">
       <div className="container benefits">
-        <div className="benefits__text-wrapper mb-12">
-          <h2 className="benefits__title text-3xl font-bold mb-12">
-            Transform with{" "}
-            <span className="text-green-500">Innovative Healthcare</span>{" "}
-            Solutions
+        <div className="benefits__text-wrapper mb-16">
+          <h2 className="benefits__title h2 mb-16 text-center">
+            Transform with Innovative Healthcare Solutions
           </h2>
         </div>
 
@@ -26,7 +24,7 @@ const Benefits = () => {
               <p className="benefits__card-subtitle text-yellow">
                 Ready for the future
               </p>
-              <h3 className="benefits__card-title text-2xl font-semibold leading-tight text-white">
+              <h3 className="benefits__card-title text-xl sm:text-2xl font-semibold leading-tight text-white">
                 Our expertise drives us to continuously innovate.
               </h3>
             </div>
@@ -56,11 +54,11 @@ const Benefits = () => {
                 {card.description}
               </p>
               <div className="benefits__card-bottom flex justify-between items-end w-full">
-                <h3 className="benefits__card-title text-2xl font-semibold">
+                <h3 className="benefits__card-title text-xl sm:text-2xl font-semibold">
                   {card.title}
                 </h3>
-                <a className="benefits__card-link w-12 h-12 bg-green rounded-full flex items-center justify-center hover:bg-green-hover">
-                  <i className="ri-arrow-right-up-line text-2xl text-white"></i>
+                <a className="benefits__card-link aspect-square p-2 w-12 h-12 bg-green rounded-[0.5rem] flex items-center justify-center relative hover:bg-green-hover">
+                  <i className="ri-arrow-right-up-line grid place-items-center w-6 h-6 text-xl text-white relative -top-[2px]"></i>
                 </a>
               </div>
             </article>

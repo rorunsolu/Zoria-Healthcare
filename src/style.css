@@ -9,14 +9,14 @@
   --color-black-2: hsl(0, 0%, 25%);
 
   --color-green: hsl(155, 100%, 25%);
-  --color-yellow: hsl(54, 100%, 56%);
+  --color-yellow: hsl(39, 92%, 61%);
   --color-purple: hsl(270, 50%, 36%);
   --color-orange: hsl(24, 100%, 50%);
 
   --color-green-hover: hsl(155, 100%, 15%);
   --color-white-hover: hsl(0, 0%, 90%);
 
-  --border-radius: 0.4rem;
+  --border-radius: 0.5rem;
   --padding-card: 1.25rem;
 
   --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
@@ -29,14 +29,13 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -63,9 +62,9 @@ section {
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 i {
@@ -73,27 +72,41 @@ i {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 
-    background: none;
+  background: none;
 }
 
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
+  font-family: inherit;
+  font-size: 100%;
 }
 
 img {
-    display: block;
-    object-fit: cover;
-    object-position: center;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 
-    width: 100%;
+  width: 100%;
 
-    border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .logo {
@@ -107,8 +120,8 @@ img {
   color: var(--color-white);
 
   img {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
   }
 }
 

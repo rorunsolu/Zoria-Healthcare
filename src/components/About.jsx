@@ -16,7 +16,7 @@ const About = () => {
                         <article key={index} className="about__stats flex flex-col items-start rounded-lg p-6 bg-white shadow-md relative">
                             <i className={`absolute-icon border-green bg-white text-green ${aboutStat.icon}`}></i>
                             <span className="about__number text-5xl leading-[1.6] font-medium text-green">{aboutStat.number}</span>
-                            <h3 className="about__category text-2xl font-semibold">{aboutStat.category}</h3>
+                            <h3 className="about__category text-2xl font-semibold mb-1">{aboutStat.category}</h3>
                             <p className="about__description text-gray-600">{aboutStat.description}</p>
                         </article>
                     ))}
