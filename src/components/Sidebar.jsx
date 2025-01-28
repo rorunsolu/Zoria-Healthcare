@@ -64,7 +64,7 @@ const Sidebar = () => {
         <div className="popup-nav flex flex-col items-end gap-4 w-full text-right">
           <div className="popup-nav__button-wrapper flex justify-end w-full">
             <button
-              className="nav__toggle-close text-white md:hidden text-[32px] hover:text-yellow"
+              className="nav__toggle-close text-white md:hidden text-[32px] hover:text-yellow-300"
               type="button"
             >
               <i className="ri-close-circle-line"></i>
@@ -74,7 +74,7 @@ const Sidebar = () => {
             {navbarLinks.map((link, index) => (
               <li key={index} className="nav__item">
                 <a
-                  className="nav__link relative font-semibold pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white hover:text-yellow"
+                  className="nav__link relative font-semibold pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] text-white hover:text-yellow-300"
                   href={link.href}
                 >
                   {link.label}

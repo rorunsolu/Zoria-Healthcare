@@ -24,7 +24,7 @@ const Articles = () => {
               <img className="w-full h-56" src={card.url} alt={card.alt} />
 
               <div className="p-5">
-                <p className="text-sm font-semibold text-purple-500 mb-2">
+                <p className="text-sm font-semibold text-green mb-2">
                   {card.author} • {card.date}
                 </p>
 

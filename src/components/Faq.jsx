@@ -5,7 +5,8 @@ const Faq = () => {
     <section id="faq" className="bg-green py-16">
       <div className="container faq flex flex-col gap-4">
         <h2 className="faq__title h2 text-center text-white mb-16">
-          Frequently Asked <span className="text-yellow-400">Questions</span>
+          Frequently Asked{" "}
+          <span className="text-yellow-300-400">Questions</span>
         </h2>
         <div className="faq flex flex-col gap-4">
           {faqItems.map((faqItem, index) => (

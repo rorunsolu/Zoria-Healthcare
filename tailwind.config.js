@@ -1,30 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: false,
     extend: {
       colors: {
-        white: 'var(--color-white)',
-        'white-2': 'var(--color-white-2)',
-        'white-hover': 'var(--color-white-hover)',
-        black: 'var(--color-black)',
-        'black-2': 'var(--color-black-2)',
+        white: "var(--color-white)",
+        "white-2": "var(--color-white-2)",
+        "white-hover": "var(--color-white-hover)",
+        black: "var(--color-black)",
+        "black-2": "var(--color-black-2)",
 
-        green: 'var(--color-green)',
-        'green-hover': 'var(--color-green-hover)',
-        yellow: 'var(--color-yellow)',
-        purple: 'var(--color-purple)',
-        orange: 'var(--color-orange)',
+        green: "var(--color-green)",
+        "green-hover": "var(--color-green-hover)",
       },
       transitionTimingFunction: {
-        'custom': 'var(--transition)',
+        custom: "var(--transition)",
       },
       transitionDuration: {
-        'custom': '200ms',
+        custom: "200ms",
       },
     },
   },
@@ -117,7 +111,6 @@ export default {
             {},
         },
       });
-    }
+    },
   ],
-}
-
+};

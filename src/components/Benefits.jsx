@@ -21,7 +21,7 @@ const Benefits = () => {
               alt="A person takign their blood sugar levels"
             />
             <div>
-              <p className="benefits__card-subtitle text-yellow">
+              <p className="benefits__card-subtitle text-yellow-300">
                 Ready for the future
               </p>
               <h3 className="benefits__card-title text-xl sm:text-2xl font-semibold leading-tight text-white">

@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className="nav__toggle-open text-white md:hidden text-[32px] hover:text-yellow"
+          className="nav__toggle-open text-white md:hidden text-[32px] hover:text-yellow-300"
           aria-label="open menu"
           type="button"
         >
