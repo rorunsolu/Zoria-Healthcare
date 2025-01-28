@@ -23,10 +23,7 @@ const Header = () => {
             src="hero/zoria-hero.png"
             alt="Doctors office"
           />
-          <div className="flex flex-col gap-[2rem]">
-            <p className="text-white w-full text-center font-medium">
-              We’ve worked with some great startups
-            </p>
+          <div className="flex flex-col gap-[2rem] mb-8">
             <div className="header__logos flex items-center justify-center gap-[1.5rem] flex-wrap mb-[4rem]">
               <img
                 className="w-[8.75rem] md:w-[12.5rem]"
